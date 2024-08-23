@@ -1,0 +1,17 @@
+{
+    "dependencies": {
+        "prettier": "^3.3.3"
+    },
+    "scripts": {
+        "clean": "rm -rf dist",
+        "compile": "npx tsc",
+        "copy-assets": "rsync -av public/ dist/",
+        "build": "npm run clean && npm run copy-assets && npm run compile",
+        "watch": "tsc -watch",
+        "dev": "npm run build && num run watch"
+    },
+    "devDependencies": {
+        "chrome-types": "^0.1.301",
+        "typescript": "^5.5.4"
+    }
+}

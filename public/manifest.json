@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Autofill Extensions",
+    "description": "Autofills form fields based on values you set.",
+    "version": "1.0",
+    "action": {
+        "default_icon": "hello_extension.jpg"
+    },
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+B",
+                "mac": "Command+B"
+            }
+        }
+    }
+}
