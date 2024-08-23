@@ -4,7 +4,8 @@
     "description": "Autofills form fields based on values you set.",
     "version": "1.0",
     "action": {
-        "default_icon": "hello_extension.jpg"
+        "default_icon": "hello_extension.jpg",
+        "default_popup": "index.html"
     },
     "background": {
         "service_worker": "js/background.js"
@@ -17,5 +18,10 @@
                 "mac": "Command+B"
             }
         }
+    },
+    "options_page": "options.html",
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
     }
 }

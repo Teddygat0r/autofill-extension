@@ -8,7 +8,7 @@
         "copy-assets": "rsync -av public/ dist/",
         "build": "npm run clean && npm run copy-assets && npm run compile",
         "watch": "tsc -watch",
-        "dev": "npm run build && num run watch"
+        "dev": "npm run build && npm run watch"
     },
     "devDependencies": {
         "chrome-types": "^0.1.301",
